@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         primary: 'var(--font-primary)',
       },
+      screens: {
+        xs: { max: '340px' },
+      },
     },
   },
   plugins: [],
