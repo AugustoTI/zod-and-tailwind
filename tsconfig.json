@@ -20,7 +20,8 @@
     "paths": {
       "~/styles/*": ["src/styles/*"],
       "~/components/*": ["src/components/*"],
-      "~/assets/*": ["src/assets/*"]
+      "~/assets/*": ["src/assets/*"],
+      "~/validations/*": ["src/validations/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
