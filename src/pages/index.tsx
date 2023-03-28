@@ -12,13 +12,15 @@ const Home: NextPage = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<LoginFields>({
     resolver: zodResolver(loginFormSchema),
   })
 
   const onSubmit: SubmitHandler<LoginFields> = data => {
-    console.log(data)
+    reset()
+    alert(JSON.stringify(data, null, 2))
   }
 
   return (
