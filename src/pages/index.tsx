@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             src={reactLogo}
             alt="Logo do ReactJS"
             priority
-            className="w-[120px] animate-spin duration-300"
+            className="w-[120px] animate-spin"
           />
           <div className="grid gap-y-[0.875rem] text-center">
             <h1 className="text-[2rem] font-bold text-gray-100">Ignite Lab</h1>
@@ -38,6 +38,7 @@ const Home: NextPage = () => {
         </header>
         <form onSubmit={handleSubmit(onSubmit)} className="mb-8">
           <Input
+            type="email"
             label="Endereço de e-mail"
             labelId="email"
             placeholder="JonDoe@example.com"
@@ -47,6 +48,7 @@ const Home: NextPage = () => {
           />
 
           <Input
+            type="password"
             label="Senha"
             labelId="password"
             placeholder="*********"
